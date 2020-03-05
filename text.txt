@@ -1,0 +1,89 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="CustomConfig" type="Vigilance.Core.Configuration.CustomConfig, Vigilance.Core" requirePermission="false" />
+  </configSections>
+  <appSettings>
+    <!--<add key="ApiUrl" value="http://localhost:64037/"/>
+    <add key="IsADexists" value="0"/>-->
+    <add key="GridPageSize" value="10" />
+    <add key="webpages:Version" value="3.0.0.0" />
+    <add key="webpages:Enabled" value="false" />
+    <add key="ClientValidationEnabled" value="true" />
+    <add key="UnobtrusiveJavaScriptEnabled" value="true" />
+    <add key="Url" value="https://uipathbot.gesa.com/api/Account/Authenticate" />
+    <add key="TenantName" value="Development" />
+    <add key="SubStr" value="3" />
+    <add key="CertificatePath" value="orchCertificate.pfx" />
+    <add key="AssetUrl" value="https://uipathbot.gesa.com/odata/Assets" />
+    <add key="QueueUrl" value="https://uipathbot.gesa.com/odata/Queues/UiPathODataSvc.AddQueueItem" />
+    <add key="CreateQueue" value="https://uipathbot.gesa.com/odata/Queues/QueueDefinitions" />
+    <add key="ADLoginRequired" value="No" />
+    <add key="ADDomain" value="Novigo" />
+    <add key="OrchUserName" value="admin" />
+    <add key="OrchPassword" value="Falnir@123" />
+    <add key="DummyUserName" value="admin" />
+    <add key="DummyPassword" value="pwd" />
+    <add key="Process1" value="Flood Report,ComplianceReport_Queue" />
+    <add key="Process2" value="Comparison Report,Queue2" />
+    <add key="Process3" value="Round Robin Assignment,Queue3" />
+    <add key="Process4" value="Test Process,Queue4" />
+    <add key="Process5" value="Stage Process,Queue5" />
+ <add key="Process7" value="Stage Process,Queue7" />
+  </appSettings>
+  <CustomConfig>
+    <DynamicDiscovery Enabled="true" />
+    <Engine Type="" />
+    <Themes basePath="~/Themes/" />
+    <UserAgentStrings databasePath="~/App_Data/uas_20140512-01.ini" />
+  </CustomConfig>
+  <system.web>
+    <globalization uiCulture="auto" culture="auto" />
+    <compilation targetFramework="4.5.2" />
+    <httpRuntime targetFramework="4.5.2" executionTimeout="100000" maxRequestLength="214748364" />
+    <authentication mode="Windows" />
+  </system.web>
+  <runtime>
+    <assemblyBinding xmlns="urn:schemas-microsoft-com:asm.v1">
+      <dependentAssembly>
+        <assemblyIdentity name="Newtonsoft.Json" culture="neutral" publicKeyToken="30ad4fe6b2a6aeed" />
+        <bindingRedirect oldVersion="0.0.0.0-10.0.0.0" newVersion="10.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Optimization" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="1.0.0.0-1.1.0.0" newVersion="1.1.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="WebGrease" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="0.0.0.0-1.5.2.14234" newVersion="1.5.2.14234" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="Autofac" publicKeyToken="17863af14b0044da" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-4.8.1.0" newVersion="4.8.1.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Http" publicKeyToken="31bf3856ad364e35" culture="neutral" />
+        <bindingRedirect oldVersion="0.0.0.0-5.2.3.0" newVersion="4.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Helpers" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="1.0.0.0-3.0.0.0" newVersion="3.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.WebPages" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="1.0.0.0-3.0.0.0" newVersion="3.0.0.0" />
+      </dependentAssembly>
+      <dependentAssembly>
+        <assemblyIdentity name="System.Web.Mvc" publicKeyToken="31bf3856ad364e35" />
+        <bindingRedirect oldVersion="0.0.0.0-5.2.7.0" newVersion="5.2.7.0" />
+      </dependentAssembly>
+    </assemblyBinding>
+  </runtime>
+  <system.webServer>
+    <staticContent>
+      <mimeMap fileExtension=".log" mimeType="text/plain" />
+    </staticContent>
+  </system.webServer>
+</configuration>
+<!--ProjectGuid: {A5C1A820-4CA5-4456-B0A5-8ED7EB993689}-->
